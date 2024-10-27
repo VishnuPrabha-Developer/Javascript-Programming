@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <h1>Guess the Number from 1 to 10</h1>
+    <input id="num1" type="number" min="1" max="10">
+    <button onclick="check()">Check</button>
+    <p class="score">Your Score:</p>
+    <script>
+        function check() {
+            const num2 = Math.floor(Math.random() * 10 + 1); // Random number from 1 to 10
+            const num1 = Number(document.getElementById("num1").value);
+            let count = 0; // Initialize score counter
+            if (num1 === num2) {
+                
+                count++; // Increment score
+                document.getElementsByClassName("score")[0].innerHTML = "You are correct!<br><br>Your Score: " + count;
+            } else {
+                document.getElementsByClassName("score")[0].innerHTML = "You are wrong!<br>The correct number was " + num2 + ".<br>Your Score: " + count;
+            }
+        }
+
+       
+    </script>
+</body>
+</html>
