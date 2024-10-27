@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add two Numbers</title>
+</head>
+<body>
+    <input id="num1" type="number" required>
+    <input id="num2" type="number" required>
+    <button onclick="total()">Total</button>
+    <p id = "result">Result</p>
+    <script>
+        function total(){
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var result = num1 + num2;
+            document.getElementById("result").innerHTML = result;
+         }
+    </script>
+
+</body>
+</html>
