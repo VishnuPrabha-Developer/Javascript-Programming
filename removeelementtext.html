@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick ="one()">One</h1>
+    <h1 onclick ="two()">Two</h1>
+    <h1 onclick ="three(event)">Three</h1>
+    <h1 onclick ="four()">Four</h1>
+    <h1 onclick ="five()">Five</h1>
+    <h1 onclick ="six()">Six</h1>
+    
+    
+</body>
+<script>
+
+        function one(){
+        event.target.remove();
+}
+        function two(){
+        event.target.textContent = '';
+}
+        function three(event){
+        event.target.textContent = '';
+}
+        function four(){
+        event.target.textContent = '';
+}
+        function five(){
+        event.target.textContent = '';
+}
+        function six(){
+        event.target.textContent = '';
+}
+</script>
+</html>
