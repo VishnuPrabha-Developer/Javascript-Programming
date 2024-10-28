@@ -1,4 +1,5 @@
-for (var count=1; count<=10; count++)
-{
-    console.log(count + " * 2 = " + count * 2);
-}
+ var fruits = ["Apple", "Orange", "Banana", "Kiwi"];
+ 
+ fruits.forEach((fruit, index) => {
+    console.log(`Fruit ${index + 1}: ${fruit}`);
+ })
